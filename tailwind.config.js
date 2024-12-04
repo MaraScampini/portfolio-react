@@ -10,6 +10,7 @@ module.exports = {
         'pastel-blue': '#D1E9F6',
         'pastel-yellow': '#F6EACB',
         'dusty-pink': '#EECAD5',
+        'dark-dusty-pink': '#DAADBB',
         'light-gray-text': "#CDCDCD"
       },
     },
