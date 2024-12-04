@@ -55,7 +55,7 @@
             },
             {
                 "type": "image",
-                "src": "/src/assets/images/login-screenshot.png",
+                "src": "/public/images/login-screenshot.png",
                 "alt": "Login screenshot"
             },
             {
