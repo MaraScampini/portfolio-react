@@ -2,6 +2,8 @@ export type Project = {
     id: number,
     title: string,
     languages: string[],
+    deployLink: string,
+    github: string,
     content: Content[]
 }
 

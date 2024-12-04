@@ -12,6 +12,8 @@
             "React",
             "JavaScript"
         ],
+        "deployLink": "",
+        "github": "",
         "content": [
             {
                 "type": "text",
@@ -36,6 +38,8 @@
             "TypeScript",
             "React"
         ],
+        "deployLink": "https://whatdoipaint-front-production.up.railway.app",
+        "github": "https://github.com/MaraScampini/WhatDoIPaint",
         "content": [
             {
                 "type": "text",
@@ -106,6 +110,8 @@
             "TypeScript",
             "React"
         ],
+        "deployLink": "https://cartographer-helper-production.up.railway.app",
+        "github": "https://github.com/MaraScampini/cartographer-helper",
         "content": [
             {
                 "type": "text",
@@ -142,6 +148,8 @@
         "languages": [
             "Java"
         ],
+        "deployLink": "",
+        "github": "https://github.com/MaraScampini/console-wordle",
         "content": [
             {
                 "type": "text",

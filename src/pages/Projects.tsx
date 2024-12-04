@@ -63,6 +63,30 @@ const Projects = () => {
           : <div></div>
         }
 
+        <div className="flex mt-5 text-pastel-yellow ">
+          {selectedProject.github != ""
+            ? <a
+              className="border border-pastel-yellow py-3 px-6 hover:bg-pastel-yellow hover:text-gray-background transition-all duration-150"
+              href={selectedProject.github}
+              target="_blank">
+              Github
+            </a>
+            :
+            <div></div>
+          }
+
+          {selectedProject.deployLink != ""
+            ? <a
+              className="border border-pastel-yellow py-3 px-6 hover:bg-pastel-yellow hover:text-gray-background transition-all duration-150 ms-5"
+              href={selectedProject.deployLink}
+              target="_blank">
+              Deploy
+            </a>
+            : <div></div>
+          }
+
+        </div>
+
         {renderContent(selectedProject.content)}
       </div>
     </div>
