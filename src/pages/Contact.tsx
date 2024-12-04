@@ -1,16 +1,14 @@
-
-
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
+  [key: string]: unknown,
   user_name: string,
   user_email: string,
   message: string
 }
 
 export const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
   const emptyFormData = {
     user_name: "",
     user_email: "",
@@ -29,9 +27,9 @@ export const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (form.current) {
+    if (formData) {
       emailjs
-        .sendForm('mara_gmail_service', 'template_contact', form.current, {
+        .send('mara_gmail_service', 'template_contact', formData, {
           publicKey: 'AHTWSrXtMDh3c-7YM',
         })
         .then(
@@ -46,7 +44,7 @@ export const Contact = () => {
       <div className='flex gap-x-10'>
         <div id='form' className='w-1/2 text-light-gray-text'>
           <p className='mb-5'>You can send me an email through this contact form:</p>
-          <form className='flex flex-col gap-y-5 ' ref={form} onSubmit={sendEmail}>
+          <form className='flex flex-col gap-y-5 ' onSubmit={sendEmail}>
             <input
               type="text"
               name="user_name"
