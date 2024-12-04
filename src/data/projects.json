@@ -135,5 +135,38 @@
                 "value": "The bottom area is for the punctuation. The game is played in four rounds so the user can introduce the points they earned in each round (corresponding with a season of the year) and the app will calculate the total by adding the two quests and the coins and subtracting the monster points (represented with a bomb)."
             }
         ]
+    },
+    {
+        "id": 4,
+        "title": "Terminal Wordle",
+        "languages": [
+            "Java"
+        ],
+        "content": [
+            {
+                "type": "text",
+                "value": "I wanted to practice Java and I still do my wordle every morning, so I put together a little terminal-based game that will take input from the user in the form of four- to seven-letter words."
+            },
+            {
+                "type": "image",
+                "src": "/images/wordle-intro.png",
+                "alt": "Random picker"
+            },
+            {
+                "type": "text",
+                "value": "The correct words come from a random word API through a call that accepts the number of letters as a parameter. The user has the number of letters + 2 tries to get each word, and words are unlocked by getting right the previous one."
+            },
+            {
+                "type": "imagePair",
+                "images": [
+                  { "src": "/images/wordle-4-word-fail.png", "alt": "User fails in four letter word" },
+                  { "src": "/images/wordle-4-word-success.png", "alt": "User succeeds in four letter word and goes to next phase" }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Whenever the user gets one word right, they can choose to continue with an increased letter count word or finish the game there."
+            }
+        ]
     }
 ]
