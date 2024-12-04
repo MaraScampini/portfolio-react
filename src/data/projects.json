@@ -68,7 +68,7 @@
             },
             {
                 "type": "image",
-                "src": "/src/assets/images/feed-screenshot.png",
+                "src": "/images/feed-screenshot.png",
                 "alt": "General user feed"
             },
             {
@@ -77,7 +77,7 @@
             },
             {
                 "type": "image",
-                "src": "/src/assets/images/project-feed.png",
+                "src": "/images/project-feed.png",
                 "alt": "Project feed"
             },
             {
@@ -90,7 +90,7 @@
             },
             {
                 "type": "image",
-                "src": "/src/assets/images/wdip.png",
+                "src": "/images/wdip.png",
                 "alt": "Random picker"
             },
             {
@@ -122,8 +122,8 @@
             {
                 "type": "imagePair",
                 "images": [
-                  { "src": "/src/assets/images/cartographers-mobile.png", "alt": "Cartographers mobile screenshot" },
-                  { "src": "/src/assets/images/cartographers-tablet.png", "alt": "Cartographers tablet screenshot" }
+                  { "src": "/images/cartographers-mobile.png", "alt": "Cartographers mobile screenshot" },
+                  { "src": "/images/cartographers-tablet.png", "alt": "Cartographers tablet screenshot" }
                 ]
               },
               {
