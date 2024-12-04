@@ -32,10 +32,10 @@ const Projects = () => {
         <div className="flex flex-col gap-y-5">
           {projects.map((project, index) => (
             <div
-              className={`p-5 border-2 border-pastel-yellow
+              className={`p-5 border-2 border-pastel-yellow transition-all duration-150
                       ${selectedProject.id === project.id
                   ? "bg-pastel-yellow pointer-events-none"
-                  : "text-pastel-yellow cursor-pointer"
+                  : "text-pastel-yellow cursor-pointer hover:bg-pastel-yellow hover:text-gray-background"
                 }
                       `}
               key={index}
