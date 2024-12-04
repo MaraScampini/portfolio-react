@@ -25,10 +25,11 @@ const NavBar = () => {
         page: "/contact"
     }]
 
-    const [selectedOption, setSelectedOption] = useState<Option>(options[0]);
+    const [selectedOption, setSelectedOption] = useState<Option>(sessionStorage.getItem('option') ? JSON.parse(sessionStorage.getItem('option')!) : options[0]);
 
     const handleSelectedOption = (option : Option) => {
         setSelectedOption(option);
+        sessionStorage.setItem('option', JSON.stringify(option));
         navigate(option.page);
     }
 
