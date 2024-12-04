@@ -27,8 +27,8 @@ const Projects = () => {
   }
 
   return (
-    <div className="mt-10 ms-10 flex gap-x-10 ">
-      <div className="w-1/5">
+    <div className="mt-10 md:ms-10 flex flex-col md:flex-row gap-x-10 ">
+      <div className="md:w-1/5 p-5">
         <div className="flex flex-col gap-y-5">
           {projects.map((project, index) => (
             <div
@@ -45,7 +45,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <div className="w-3/5 text-light-gray-text flex flex-col justify-center items-center mb-10">
+      <div className="p-5 md:p-0 md:w-3/5 text-light-gray-text flex flex-col justify-center items-center mb-10">
         {selectedProject.languages.length != 0
           ? <p className="text-center text-pastel-yellow">
             [

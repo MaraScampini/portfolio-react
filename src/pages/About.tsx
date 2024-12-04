@@ -2,10 +2,10 @@
 const About = () => {
   return (
     <section className="flex gap-10 px-5 mt-20">
-		<div className="w-1/3 ps-20">
+		<div className="w-1/3 ps-20 hidden md:block">
 			<img src="/mara.png" alt="Portrait" />
 		</div>
-		<div className="w-2/3 me-24 text-justify">
+		<div className="px-2 md:w-2/3 md:me-24 text-justify">
 			<h1 className="text-5xl font-semibold text-pastel-blue mb-10">
 				Hello!
 			</h1>
