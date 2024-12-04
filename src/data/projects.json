@@ -1,0 +1,139 @@
+[
+    {
+        "id": 1,
+        "title": "Overview",
+        "languages": [
+            "PHP",
+            "Symfony",
+            "Laravel",
+            "NodeJS",
+            "Express",
+            "TypeScript",
+            "React",
+            "JavaScript"
+        ],
+        "content": [
+            {
+                "type": "text",
+                "value": "I have worked for several clients with different needs in my two years as a developer. As a part of a small team, we have created projects from the ground up, and I have been involved in all the phases of development, from the client proposing an idea to suit their needs to the design of the back-end architecture and database, the coding phase, testing and delivery. I have worked with a CI/CD environment powered by GitHub Actions and kept close contact with clients to make sure the final product met their necessities, including providing technical support at launch time and giving formations to users. "
+            },
+            {
+                "type": "text",
+                "value": "This wide range of websites included internal solutions for companies in diverse sectors as well as client-facing websites. This sometimes included integrations with third party services such as WordPress or payment interfaces as RedSys or Stripe."
+            },
+            {
+                "type": "text",
+                "value": "I have developed RESTful APIs for these clients’ sites, including features such as automatic mailing, dynamic PDF generation, educational workflows with simulated messages, self-correcting checkpoints and use of extensive forms or invoicing."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "WDIP? - Hobby Tracker",
+        "languages": [
+            "PHP",
+            "Symfony",
+            "TypeScript",
+            "React"
+        ],
+        "content": [
+            {
+                "type": "text",
+                "value": "I created this small project for myself and a few friends who all share a creative miniature-painting hobby. This usually comes with what we call a pile of shame with a bunch of unfinished (or not even started) projects that stay that way for a long time while you keep buying new things."
+            },
+            {
+                "type": "text",
+                "value": "I wanted to have a place to track all my ongoing or recently acquired projects and I thought it would be nice if the application could also help me choose what I was going to paint in the days I felt indecisive."
+            },
+            {
+                "type": "text",
+                "value": "This called for a Full-Stack project, so I developed the full API in PHP with Symfony, made the front-end  using React with Zustand and Tanstack React Query and I opted for a relational MySQL database. The whole project was deployed in Railway and is currently accessible here."
+            },
+            {
+                "type": "text",
+                "value": "The website has authentication using JWT, so the first thing the user can do is register or login into their private section:"
+            },
+            {
+                "type": "image",
+                "src": "/src/assets/images/login-screenshot.png",
+                "alt": "Login screenshot"
+            },
+            {
+                "type": "text",
+                "value": "Once the user is inside their area, the first they can see is a feed page with all of their projects, ordered by priority and then by last update date. This feed has a search feature with a debouncer that adds a small delay to the user’s writing before calling the API for the results, and also includes some search filters such as the level of the project or the techniques used in it. "
+            },
+            {
+                "type": "text",
+                "value": "By default, it does not show finished or archived projects, but the user can retrieve those using a specific filter."
+            },
+            {
+                "type": "image",
+                "src": "/src/assets/images/feed-screenshot.png",
+                "alt": "General user feed"
+            },
+            {
+                "type": "text",
+                "value": "Each project has a dedicated page with its description, gallery and update feed and projects can be created through the big + button on the bottom-right side of the page. This page also includes a table with all of the individual miniatures that are part of the project and has support for whole squads that can be updated together or individually, depending on the user’s needs."
+            },
+            {
+                "type": "image",
+                "src": "/src/assets/images/project-feed.png",
+                "alt": "Project feed"
+            },
+            {
+                "type": "text",
+                "value": "All projects can be updated from the feed page directly by using the small tick on the bottom-right side of the pictures. This will trigger a streak counter that will update daily. It will also give the user the option to make a full update with images and text or leave it as is. This was a feature I really wanted to integrate, as keeping a steady hobby rhythm is a difficult task for many of us!"
+            },
+            {
+                "type": "text",
+                "value": "The question mark in the bottom right of the feed page takes the user to a random picker that will allow them to use certain filters to pick from their logged projects and suggest something they could work on that day. This was the main thing I wanted to add to the tracker for it to have a nice, catching feature that could make it more fun for us to use and to choose what to dedicate our hobby time to."
+            },
+            {
+                "type": "image",
+                "src": "/src/assets/images/wdip.png",
+                "alt": "Random picker"
+            },
+            {
+                "type": "text",
+                "value": "Overall this was a really fun project with some challenging aspects such as the streak keeping, the database design, mainly with the squads being a variable element that could act as a single element or as a group of individual miniatures that could be updated separately."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Cartographers - a board game helper",
+        "languages": [
+            "TypeScript",
+            "React"
+        ],
+        "content": [
+            {
+                "type": "text",
+                "value": "Cartographers is a small roleplaying writing game I enjoy playing with friends. As it comes with sheets of paper the player has to write on, it has limited playability and I thought it would be nice to make a small helper app that I could use on my iPad to play and not need the paper sheet."
+            },
+            {
+                "type": "text",
+                "value": "It is a front-end only app at the moment, developed in React, and it provides the same experience to the player as the original paper writing game, as in it does not have any automatic functions aside from a small calculator in the punctuation area that gets the total for you when introducing the round points you have."
+            },
+            {
+                "type": "text",
+                "value": "I opted for a more modern, minimal design than the original game as I thought it suited the digital version better. I also made it responsive so it can be used on a phone if needed, but the experience will be better on an iPad."
+            },
+            {
+                "type": "imagePair",
+                "images": [
+                  { "src": "/src/assets/images/cartographers-mobile.png", "alt": "Cartographers mobile screenshot" },
+                  { "src": "/src/assets/images/cartographers-tablet.png", "alt": "Cartographers tablet screenshot" }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "The player can tap the upper colored tiles to select a type of terrain and tap in the map to position it. There are special tiles in the map that won’t allow the player to position a terrain above them, just as in the original game (the mountain tiles). The player also has a small coin area below the map where they can tap the coins to mark they possess them."
+            },
+            {
+                "type": "text",
+                "value": "The bottom area is for the punctuation. The game is played in four rounds so the user can introduce the points they earned in each round (corresponding with a season of the year) and the app will calculate the total by adding the two quests and the coins and subtracting the monster points (represented with a bomb)."
+            }
+        ]
+    }
+]
