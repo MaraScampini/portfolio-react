@@ -39,8 +39,8 @@ const About = () => {
 				become a better professional.
 			</p>
 			<p className="text-lg text-light-gray-text mb-3">
-				If you want to know more or collaborate with me, head to my
-				<a href="/contact" className="text-pastel-blue hover:underline font-semibold">Contact</a> page and let's chat!
+				If you want to know more or collaborate with me, head to my 
+				<a href="/contact" className="text-dusty-pink hover:underline font-semibold">Contact</a> page and let's chat!
 			</p>
 		</div>
 	</section>
