@@ -3,7 +3,7 @@ const About = () => {
   return (
     <section className="flex gap-10 px-5 mt-20">
 		<div className="w-1/3 ps-20">
-			<img src="/src/assets/mara.png" alt="Portrait" />
+			<img src="/images/mara.png" alt="Portrait" />
 		</div>
 		<div className="w-2/3 me-24 text-justify">
 			<h1 className="text-5xl font-semibold text-pastel-blue mb-10">
