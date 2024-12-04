@@ -27,7 +27,7 @@ const NavBar = () => {
 
     const [selectedOption, setSelectedOption] = useState<Option>(sessionStorage.getItem('option') ? JSON.parse(sessionStorage.getItem('option')!) : options[0]);
 
-    const handleSelectedOption = (option : Option) => {
+    const handleSelectedOption = (option: Option) => {
         setSelectedOption(option);
         sessionStorage.setItem('option', JSON.stringify(option));
         navigate(option.page);
@@ -39,8 +39,10 @@ const NavBar = () => {
                 <div
                     key={option.title}
                     onClick={() => handleSelectedOption(option)}
-                    className={`flex justify-center py-3 px-5 hover:cursor-pointer ${option.title === selectedOption.title ? `bg-${option.color} text-gray-background pointer-events-none`
-                        : `text-${option.color} hover:underline`}`}
+                    className={`flex justify-center py-3 px-5 transitions-all duration-150
+                        ${option.title === selectedOption.title
+                            ? `bg-${option.color} text-gray-background pointer-events-none`
+                            : `hover:cursor-pointer text-${option.color} hover:text-gray-background hover:underline hover:bg-${option.color}`}`}
                 >
                     <span>{option.title}</span>
                 </div>
